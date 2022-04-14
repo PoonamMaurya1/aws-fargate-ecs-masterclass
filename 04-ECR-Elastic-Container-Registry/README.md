@@ -71,7 +71,7 @@ docker run --name aws-ecr-nginx -p 80:80 --rm -d 180789647333.dkr.ecr.ap-south-1
 - **AWS CLI Version 1.x**
 ```
 AWS CLI Version 1.x
-aws ecr get-login --no-include-email --region <your-region>
+aws ecr get-login --no-include-email --region <your-region>     aws ecr get-login-password --region us-east-1
 aws ecr get-login --no-include-email --region ap-south-1
 Use "docker login" command from previous command output
 docker push 180789647333.dkr.ecr.ap-south-1.amazonaws.com/aws-ecr-nginx:1.0.0
